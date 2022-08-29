@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                padding: 10px;
+                margin: 5px;
+            }
+
+            img {
+                width: 10%;
+                height: 10%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Welcome to the Super Hero Search Engine!</h1>
+        <form action="/" method="post">
+            <div>
+                <label for="heroinp">Enter Super Hero:</label>
+                <input type="text" name='textbox'>
+            </div>
+            <input type="submit">
+        </form>
+        <h3><%= name %></h3>
+        <img src=<%= image %>>
+        <h4><strong><%= ali %></strong></h4>
+        <ul>
+            <% heroList.forEach(function(hero) { %>
+                
+                <li><p><%= hero %></p></li>
+            <% }); %>
+        </ul>
+   
+        
+
+    </body>
+</html>
